@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>E vaccine</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="img/fav.png">
+        <link rel="stylesheet" th:href="@{css/style.css}">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5">
+            <div class="container-fluid d-flex justify-content-evenly">
+                <form class="d-flex">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success " type="submit">Search</button>
+                </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#activity">Activty</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#achivement">Achivements</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Program
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                  <li> 
+                    <a class="nav-link" href="/user/index"> <button class="btn loginbtn btn-outline-primary " type="submit">User LogIn</button></a>
+                  </li>
+                    <li>
+                        <a class="nav-link" href="/admin/index"> <button class="btn loginbtn btn-outline-danger " type="submit">Admin LogIn</button></a>
+                    </li>
+                </ul>
+                
+              </div>
+
+            </div>
+        </nav>
+
+        <!-- about us -->
+        <div class="conainer-fluid mtop">
+            <h2 class="text-center h2 mb-3">About Us</h2>
+            <div id="about"class="row container-fluid">
+                <div class="col-sm-8 text my-auto wow animate__animated animate__bounce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus officia atque soluta. Quam ut sequi iste. Harum velit fugiat pariatur at porro eum, amet nemo. Excepturi 
+                    natus eveniet ducimus corrupti odio eos suscipit recusandae blanditiis!
+                </div>
+                <div class="col-sm-4 img  wow animate__animated animate__backInRight">
+                    <img src="img/about.jpg" class="img-responsive" style="width: 100%">
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- activity -->
+        <div class="container-fluid mt-5 " id="activity">
+            <h2 class="h2 mb-2 text-center text-primary">Our Activty</h2>
+            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Est ipsum molestias error laboriosam doloribus perspiciatis ab impedit nemo provident. Officia saepe at eos exercitationem illum, doloremque dolores iste officiis odio natus ullam quisquam 
+            sit itaque molestias laborum. Iusto, repellat reprehenderit.
+            </p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner  h-100 mx-auto" style="width: 55%; height: 50%; margin-x:auto">
+                  <div class="carousel-item active">
+                    <img src="img/vaccination1.jpg" class="d-block w-100 fiximg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Varicella</h5>
+                      <p>Women of childbearing age who are not pregnant,
+                         and who are not immune to varicella (chickenpox) should be vaccinated against varicella.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/vaccination2.png" class="d-block w-100 fiximg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Polio Vaccination</h5>
+                      <p>Polio vaccines are vaccines used to prevent poliomyelitis
+                        three doses of the inactivated polio vaccine (IPV) are 99% to 100% effective at preventing polio
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/vaccination3.jpg" class="d-block w-100 fiximg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>COVID-19 vaccine</h5>
+                      <p>Now that COVID-19 vaccines have reached billions of people worldwide, and they are our best bet of staying safe</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div class="container-fluid my-5" id="achivement">
+            <h2 class="h2 text-success text-center mb-4">Achivements</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="card h-80 ">
+                    <img src="img/reward1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Public Health Insurece</h5>
+                      <p class="card-text">Awards for outstanding contributions to public health presented during the  Seventy-fifth World Health Assembly</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted"><a href="#">See More...</a></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-80 ">
+                    <img src="img/reward2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Health Minister’s National Award 2019</h5>
+                      <p class="card-text">WHO supports the Ministry of Health and Family Welfare (MoHFW) to assess and award the best performing health facilities in the country.
+
+                        On the 8th of October, 51 health facilities from all tiers of the public health system in the country have received Health Minister’s National Award 2019, recognizing and promoting best practices in the Bangladesh health system.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="#">See More...</a></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-80 ">
+                    <img src="img/reward4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Public health prizes and awards</h5>
+                      <p class="card-text">The prizes are established either in the name of eminent health professionals and international figures or by prominent foundations that commit to support international and global public health innovation and success.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="#">See More...</a></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-80 ">
+                    <img src="img/reward3.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">WHO Director-General’s Global Health Leaders’ Award</h5>
+                      <p class="card-text">India’s one million ASHA workers were awarded and honoured by WHO for their outstanding contribution to advancing global health, demonstrated leadership and commitment to regional health issues.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a href="#">See More...</a></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="container-fluid my-5" id="contact">
+            <h2 class="h2 fw-bold text-center mt-3">People Offen Ask</h2>
+            <div class="container-fluid row mt-5 gap-3">
+                <div class="col-md-6">
+                    <h2 class="h2 text-danger mb-4">Submit Your Suggestions</h2>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="adminmail" class="form-control" id="inputEmail4">
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        
+                        <div class="col-md-12 inputflow">
+                          <label for="inputCity" class="form-label">How can we help You?</label>
+                          <input type="textarea" class="form-control h-100 " id="inputCity">
+                        </div>
+                        
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-outline-primary">Submit</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              How this website works?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">We will provide vaccine according your child age and if you want to give this vaccine we will book a vaccine in local GOVT. hospital and provide you a token with date and time</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              What about the paid vaccine?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">In this case we will make sure how are going to pay, in the token there will be online transiction or mobile banking number and after paying you will get a confirmation message</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Can you provide any emergency vaccine?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">We don't store any vaccine. But what we can do we will try to get the vaccine from any private hospital</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-5">
+            <h2 class="h2 text-danger text-center mb-5">Not a member?</h2>
+            <form class="row g-3 text-center w-75 mx-auto" th:action="@{/processsignup}"  method="post">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="adminmail" class="form-control" name="email" id="useremail" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputEmail4" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputEmail4" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="age" name="age" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Birth Certificate Number</label>
+                  <input type="number" class="form-control" id="birthnumber" name="birthnumber" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputEmail4" class="form-label">Gender</label>
+                    <select class="form-select" aria-label="Default select example" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputPassword4" class="form-label">Birthday</label>
+                    <input type="date" class="form-control" id="bd" name="birthday" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Phone</label>
+                  <input type="number" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" name="address" placeholder="Benodepur, Munshiganj Sadar, Munshiganj">
+                </div>
+            
+                
+                <div class="col-12">
+                  <button type="submit" class="btn btn-outline-dark">Sign Up</button>
+                </div>
+              </form>
+        </div>
+
+        <script th:src="@{js/wow.min.js}"></script>
+              <script>
+              new WOW().init();
+              </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

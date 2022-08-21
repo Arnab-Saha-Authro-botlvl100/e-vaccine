@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div class="container-fluid flex justify-content-center align-items-center g-4" style="height:100vh">
+  <h1 class="h1">Add Vaccine</h1>
+  <form class="row g-3" th:action="@{/admin/addvaccines}" method="post">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Vaccine Name</label>
+      <input type="text" class="form-control" id="inputEmail4" name="vaccinename" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Age</label>
+      <input type="number" class="form-control" id="inputPasword4" name="age" required>
+    </div>
+    <div class="col-md-4">
+      <label for="inputAddress" class="form-label">Gender</label>
+      <select id="inputState" class="form-select" name="gender" placeholder="Gender" required>
+        <option >Male</option>
+        <option>Female</option>
+        <option>Both</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputPassword4" class="form-label">Dose</label>
+      <input type="number" class="form-control" id="inputPassword4" name="dose" required>
+    </div>
+    <div class="col-md-4">
+      <label for="inputPassword4" class="form-label">Limit in ML</label>
+      <input type="text" class="form-control" id="inputPassword4" name="ml" required>
+    </div>
+    <div class="col-12">
+      <label for="inputPassword4" class="form-label">Information</label>
+      <input type="text" class="form-control" id="inputPassword4" name="information" required>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn " style="background-color:lemonchiffon">Add</button>
+    </div>
+  </form>
+</div>
+
+<div class="container-fluid table-responsive flex justify-content-center">
+  <h1 class="h1 m-3">Requested Vaccine from customers</h1>
+
+  <div class="container" th:if="${session.message}">
+    <div th:classappend="${'alert-'+session.message.type}" class="alert text-center" role="alert">
+      <span th:text="${session.message.content}"></span>
+    </div>
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">User Mail</th>
+      <th scope="col">Vaccine Name</th>
+      <th scope="col">Requested Date</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="booking: ${bookinglist}">
+        <td th:text="${booking.id}"></td>
+        <td th:text="${booking.user}"></td>
+        <td th:text="${booking.vaccine}"></td>
+        <td th:text="${booking.date}"></td>
+      <td>
+        <a th:href="@{/acceptbooking(param1=${booking.user},param2=${booking.vaccine}
+                       )}">
+          <button class="btn btn-outline-success" type="submit">Accept</button>
+        </a>
+        <a th:href="@{/deletebooking(param1=${booking.id}
+                       )}">
+          <button class="btn btn-outline-danger" type="submit">Delete</button>
+        </a>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

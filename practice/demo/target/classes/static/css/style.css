@@ -1,0 +1,26 @@
+.fiximg{
+    width: 20%;
+}
+
+.carousel-item img{
+    width: 0importent;
+}
+
+.card{
+    overflow-y: scroll;
+}
+.inputflow{
+    overflow-y: scroll;
+}
+.card::-webkit-scrollbar, .inputflow::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(255, 68, 22)
+}
+
+.wi80{
+    width: 20rem!important;
+}
+
+.mtop{
+    margin-top: 4.5rem;
+}
